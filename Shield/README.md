@@ -4,3 +4,4 @@
 * Stackable headers (plug directly into Arduino and add more shields on top)
 * Arduino Mega compatible
 * Requires digital pins 2,3,4,5 and analog pins 0,1,2
+* Source code and examples: https://github.com/mikekellyio/muxshield  
