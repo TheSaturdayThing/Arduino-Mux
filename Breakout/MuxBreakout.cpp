@@ -1,5 +1,5 @@
 /*
- MuxBreakout.cpp - 1 x 16 breakout board
+ MuxBreakout.cpp - 1 x 16 breakout board without latches
  Based on Library for using Mayhew Labs' Mux Shield.
  Created by Mark Mayhew, December 29, 2012.
  Released into the public domain.
@@ -68,7 +68,7 @@ void MuxBreakout::setMode(int mux, int mode)
     }
 }
 
-void MuxBreakout::digitalWriteMS(int mux, int chan, int val)
+void MuxBreakout::digitalWriteMB(int mux, int chan, int val)
 {
     int i;
     
@@ -92,7 +92,7 @@ void MuxBreakout::digitalWriteMS(int mux, int chan, int val)
     
 }
 
-int MuxBreakout::digitalReadMS(int mux, int chan)
+int MuxBreakout::digitalReadMB(int mux, int chan)
 {
     digitalWrite(_OUTMD,LOW);   //Set outmode off (i.e. set as input mode)
     int val;
@@ -111,7 +111,7 @@ int MuxBreakout::digitalReadMS(int mux, int chan)
     return val;
 }
 
-int MuxBreakout::analogReadMS(int mux, int chan)
+int MuxBreakout::analogReadMB(int mux, int chan)
 {
     digitalWrite(_OUTMD,LOW);
     int val;
