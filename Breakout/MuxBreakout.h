@@ -21,13 +21,12 @@ public:
     MuxBreakout();
     MuxBreakout(int S0, int S1, int S2, int S3);
     void setMode(int mode);
-    void digitalWriteMB(int val);
-    int digitalReadMB();
-    int analogReadMB();
+    void digitalWriteMB(int chan, int val);
+    int digitalReadMB(int chan);
+    int analogReadMB(int chan);
     
 private:
     int _S0,_S1,_S2,_S3,_IO1;  
-    
 };
 
 #endif
