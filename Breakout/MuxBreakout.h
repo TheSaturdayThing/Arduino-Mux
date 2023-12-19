@@ -19,16 +19,14 @@ class MuxBreakout
 {
 public:
     MuxBreakout();
-    MuxBreakout(int S0, int S1, int S2, int S3, int OUTMD, int IO1);
-    void setMode(int mux, int mode);
-    void digitalWriteMB(int mux, int val);
-    int digitalReadMB(int mux);
-    int analogReadMB(int mux);
+    MuxBreakout(int S0, int S1, int S2, int S3);
+    void setMode(int mode);
+    void digitalWriteMB(int val);
+    int digitalReadMB();
+    int analogReadMB();
     
 private:
-    int _S0,_S1,_S2,_S3,_OUTMD,_IO1;
-    int _LE1,_LE2,_LE3,_M1,_M2,_M3;    
-    
+    int _S0,_S1,_S2,_S3,_IO1;  
     
 };
 
