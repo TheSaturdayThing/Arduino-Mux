@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map for MuxBreakout
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MuxBreakout	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setMode		KEYWORD2
+digitalWriteMB	KEYWORD2
+digitalReadMB	KEYWORD2
+analogReadMB	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DIGITAL_IN	LITERAL1
+DIGITAL_IN_PULLUP	LITERAL1
+DIGITAL_OUT	LITERAL1
+ANALOG_IN	LITERAL1
