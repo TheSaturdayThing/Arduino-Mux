@@ -1,5 +1,5 @@
 /*
- MuxBreakout.h - 1 x 16 breadkout board 
+ MuxBreakout.h - 1 x 16 breakout board without latches
  Library for using Mayhew Labs' Mux Shield.
  Created by Mark Mayhew, December 20, 2012.
  Released into the public domain.
