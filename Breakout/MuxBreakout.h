@@ -21,9 +21,9 @@ public:
     MuxBreakout();
     MuxBreakout(int S0, int S1, int S2, int S3, int OUTMD, int IO1);
     void setMode(int mux, int mode);
-    void digitalWriteMS(int mux, int val);
-    int digitalReadMS(int mux);
-    int analogReadMS(int mux);
+    void digitalWriteMB(int mux, int val);
+    int digitalReadMB(int mux);
+    int analogReadMB(int mux);
     
 private:
     int _S0,_S1,_S2,_S3,_OUTMD,_IO1;
